@@ -161,10 +161,11 @@ function recordCleaner(){
   for(i = 0; i < myCar.accidents.length; i++){
     for(let key in myCar.accidents){
       if(myCar.accidents[i].atFaultForAccident === true){
-        return false
+        myCar.accidents[i].atFaultForAccident = false
       }
     }
   }
+  // console.log(myCar)
 }
 
 
